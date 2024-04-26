@@ -11,9 +11,9 @@
        src: target
        dest: /home/ansadmin
     - name : Build image
-      command: docker build -t umeshsrathod/Project-maven-web-app .
+      command: docker build -t umeshsrathod/project-maven-web-app .
     - name : Push Docker Image
-      command: docker push umeshsrathod/Project-maven-web-app
+      command: docker push umeshsrathod/project-maven-web-app
 - name: Second Play - K8s Deployment
   hosts: eks
   tasks:
