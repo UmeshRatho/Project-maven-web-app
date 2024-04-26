@@ -9,16 +9,16 @@ spec:
     type: Recreate
  selector: 
    matchLabels: 
-     app: Project-maven-web-app
+     app: project-maven-web-app
  template:
   metadata:
    name: mavenwebapppod
    labels:
-     app: Project-maven-web-app
+     app: project-maven-web-app
   spec: 
     containers:
     - name: mavenwebappcontainer
-      image: umeshsrathod/Project-maven-web-app
+      image: umeshsrathod/project-maven-web-app
       imagePullPolicy: Always
       ports:
       - containerPort: 8080
