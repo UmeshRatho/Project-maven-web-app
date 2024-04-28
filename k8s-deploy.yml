@@ -12,7 +12,7 @@ spec:
      app: project-maven-web-app
  template:
   metadata:
-   name: mavenwebapppod
+   name: project-maven-web-app
    labels:
      app: project-maven-web-app
   spec: 
@@ -30,7 +30,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-   app: mavenwebapp
+   app: project-maven-web-app
   ports:
    - port: 80
      targetPort: 8080
